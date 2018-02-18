@@ -1,4 +1,4 @@
-<div class="drag-drop-view">
-  <span class="info">Drag your {{filetypes.join(', ')}} files into the container below to upload for analysis.</span>
-  <div class="drag-container"></div>
+<div class="drag-drop-view tab">
+  <span class="tab-info">Drag your {{filetypes.join(', ')}} files into the container below to upload for analysis.</span>
+  <div class="drag-container" (dragover)="dragoverHandler($event)" (drop)="dropHandler($event)" (click)="clickHandler()"></div>
 </div>
