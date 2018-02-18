@@ -5,3 +5,4 @@ interface NodeModule {
 }
 
 declare module 'easy-fit';
+declare module 'buffer';

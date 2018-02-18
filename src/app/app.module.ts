@@ -4,6 +4,7 @@ import {MatButtonModule, MatTabsModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { ParseFitFileService } from './parse-fit-file.service';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { DragDropComponent } from './drag-drop/drag-drop.component';
     MatTabsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ParseFitFileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
