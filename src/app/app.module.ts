@@ -5,6 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { ParseFitFileService } from './parse-fit-file.service';
+import { FitnessDataService } from './fitness-data.service';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { ParseFitFileService } from './parse-fit-file.service';
     MatTabsModule,
     BrowserAnimationsModule
   ],
-  providers: [ParseFitFileService],
+  providers: [ParseFitFileService, FitnessDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,23 @@
 .drag-container
     margin: 0 50px
-    width: 400px;
-    height: 200px;
-    outline: 1px solid blue;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.45);
+
+    svg
+        height: 100px;
+        width: inherit;
+
+        path
+            fill: #5A5A5A;
+
+    span
+        display: block;
+        color: #808080;
+
+.drag-container.hasData svg path
+        fill: #106CC8;
+    
+    
+    
